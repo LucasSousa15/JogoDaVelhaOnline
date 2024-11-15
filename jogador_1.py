@@ -10,7 +10,7 @@ class TicTacToePlayer:
 
     async def start(self):
         self.connection = await aio_pika.connect_robust(
-            "amqps://pyfijodg:JIo29p_X4bz64DTLD9y-paeT38Azwy5_@jackal.rmq.cloudamqp.com/pyfijodg",
+            "Seu servidor AMQP",
             loop=asyncio.get_event_loop()
         )
 

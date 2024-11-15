@@ -14,7 +14,7 @@ class RabbitMQManager:
 
     async def connect(self):
         self.connection = await aio_pika.connect_robust(
-            "amqps://jbuceaki:rs521dviI8hEUnlMqAS0JDYr_2QngNIT@jackal.rmq.cloudamqp.com/jbuceaki",
+            "seu servidor ampq",
             loop=asyncio.get_event_loop()
         )  # Conecta-se ao RabbitMQ usando a biblioteca aio_pika
         self.channel = await self.connection.channel()  # Cria um canal na conexão estabelecida
